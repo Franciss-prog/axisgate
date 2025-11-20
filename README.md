@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Minecraft Coordinate Converter (UI-Only Prototype)
 
-## Getting Started
+This project is a Minecraft-themed web application that provides a fully functional user interface and UX for converting coordinates between the Nether and the Overworld.
+**Note:** The actual coordinate conversion logic is intentionally not implemented. The app uses placeholder results only.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Minecraft-Themed UI
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* Pixel/block-inspired X, Y, Z labels
+* Minecraft-styled button, textures, borders, and color palette
+* Header styled like in-game signage
+* In-game–inspired result/info panel
+* Matching themed footer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Functional UX (Without Real Math)
 
-## Learn More
+* Toggle to switch between **Nether → Overworld** and **Overworld → Nether**
+* Inputs for each coordinate update internal state
+* “Convert” button triggers a placeholder handler
+* Dynamic placeholder output displayed in the result panel
+* Loading/processing visual feedback (e.g., pixel shimmer, block pulse)
+* Input validation feedback (highlighting missing fields)
 
-To learn more about Next.js, take a look at the following resources:
+### Restrictions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* No real coordinate conversion calculations
+* No backend
+* No abstract UX strategy—only visible, practical UX behavior
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **Next.js**
+* **React**
+* **Tailwind CSS**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Project Structure
+
+* Full Next.js component structure
+* Tailwind-styled JSX interface
+* React state handling for toggles, inputs, placeholders, and visual responses
+
+---
+
+## Setup & Development
+
+1. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+2. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+3. Open the app at:
+
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## Notes
+
+This project is intended as a UI/UX prototype.
+You can integrate your own coordinate conversion logic later inside the placeholder handler tied to the Convert button.
